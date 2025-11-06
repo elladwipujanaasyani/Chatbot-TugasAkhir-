@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UPT. Perpustakaan UNP</title>
+  <link rel="stylesheet" href="sejarah.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <img src="images/logo-unp.png" alt="Logo UNP">
+        <img src="images/logo-perpus-unp.png" alt="Logo Perpustakaan" class="logo-img">
+        <div class="title">
+          <h1>UPT. Perpustakaan dan Penerbitan</h1>
+          <p>Universitas Negeri Padang</p>
+        </div>
+      </div>
+      <div class="top-right">
+        <div class="lang">
+          <img src="https://flagcdn.com/id.svg" alt="ID" width="24">
+          <img src="https://flagcdn.com/gb.svg" alt="EN" width="24">
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Kata Kunci...">
+          <button>🔍</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="dashboard.html">Home</a></li>
+      <li><a href="sejarah.html">Sejarah</a></li>
+      <li><a href="#">Manajemen</a></li>
+      <li><a href="#">Layanan Digital</a></li>
+      <li><a href="#">Panduan</a></li>
+      <li><a href="#">Berita</a></li>
+      <li><a href="#">Agenda</a></li>
+    </ul>
+  </nav>
+
+    <!-- Timeline -->
+    <section class="timeline">
+        <!-- Item -->
+        <div class="timeline-item">
+            <div class="timeline-year">1954</div>
+            <div class="timeline-content">
+                <h3>Pendirian Awal</h3>
+                <p>Berdirinya Perguruan Tinggi Pendidikan Guru (PTPG) di Batusangkar berdasarkan SK Menteri P dan K 
+                    Prof. M.Yamin, S.H. tanggal 23 Oktober 1954. Perpustakaan PTPG mulai dibangun dengan kondisi 
+                    sangat sederhana untuk melengkapi persyaratan perguruan tinggi.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-year">1964</div>
+            <div class="timeline-content">
+                <h3>Perubahan ke FKIP Unand</h3>
+                <p>Pengintegrasian PTPG ke Universitas Andalas berdasarkan Peraturan Pemerintah Nomor 24 1956, 
+                    menjadi Fakultas Keguruan dan Ilmu Pendidikan (FKIP). Perpustakaan berubah menjadi Perpustakaan 
+                    FKIP Unand di Kampus Pondok Padang.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-year">1965</div>
+            <div class="timeline-content">
+                <h3>Era IKIP Padang</h3>
+                <p>Berdasarkan SK Menteri PTIP Nomor 162 tahun 1965, IKIP Jakarta Cabang Padang berubah menjadi 
+                    IKIP Padang dengan 5 fakultas. Tahun 1966 pindah ke Kampus Air Tawar.
+                    - 1966-1971: Koleksi 3000 eksemplar, 9 pustakawan
+                    - 1971: Pindah ke gedung permanen 200 m²
+                    - 1980: Menempati gedung baru 1.630 m²</p>
+            </div>
+        </div>
+    </section>
+
+      <!-- Tombol Chatbot -->
+  <!-- Kotak Chatbot -->
+  <div id="chat-container" class="chat-wrapper">
+    <h2>Chatbot Perpustakaan UNP</h2>
+    <div id="chat-box" class="chat-box"></div>
+
+    <!-- Gunakan form agar Enter bisa digunakan -->
+    <form id="chat-form" class="input-area">
+      <input type="text" id="user-input" placeholder="Ketik pertanyaan di sini..." autocomplete="off" required />
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+
+    <script src="./chatbot.js"></script>
+</body>
+</html>

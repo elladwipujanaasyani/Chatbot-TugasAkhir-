@@ -1,0 +1,92 @@
+/* ======= Dasar Halaman ======= */
+body {
+  background: #f7f7f9;
+}
+
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+/* Kartu/form */
+.card {
+  border-radius: 16px;
+}
+
+/* Badge bulat kecil (chip) di header */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  font-weight: 600;
+}
+.chip + .chip {
+  margin-left: 0.5rem;
+}
+
+/* ======= Tabel ======= */
+.table td,
+.table th {
+  vertical-align: top; /* supaya konten atas */
+}
+
+/* Kolom teks panjang supaya rapi membungkus */
+.pertanyaan,
+.jawaban {
+  white-space: pre-wrap;   /* hormati line break */
+  word-break: break-word;  /* pecah kata panjang */
+}
+
+/* Aksi edit/hapus */
+.table .aksi a {
+  margin-right: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.table .aksi a:hover {
+  text-decoration: underline;
+}
+
+/* Opsional: kecilkan kolom nomor & aksi di layar kecil */
+@media (max-width: 576px) {
+  th.text-center[style*="width:60px"],
+  td.no.text-center {
+    width: 44px !important;
+  }
+  th.text-center[style*="width:120px"] {
+    width: 96px !important;
+  }
+}
+
+/* ======= (Opsional) Penyesuaian Form =======
+   Kamu pakai Bootstrap, jadi sebenarnya sudah bagus.
+   Tambahan kecil berikut hanya untuk rasa yang konsisten. */
+#faq-form .form-control,
+#faq-form .form-select {
+  border-radius: 12px;
+}
+#faq-form .btn {
+  border-radius: 12px;
+}
+
+/* ======= (Opsional) Utility kecil ======= */
+.text-muted.small {
+  user-select: text;
+}

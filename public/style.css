@@ -1,0 +1,308 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: transparent !important;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: transparent !important;
+}
+
+.chatbot-container, .chat-window, .wrapper {
+  background: transparent !important;
+}
+
+.header {
+  background-color: #002e5b;
+  color: white;
+  padding: 15px 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.logo-img {
+  height: 10px;
+  margin-right: 10px;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.title p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.lang img {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+}
+
+.search input {
+  padding: 6px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  font-size: 14px;
+}
+
+.search button {
+  padding: 6px 10px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.navbar-image {
+  text-align: center;
+  background-color: #fff;
+  padding: 0;
+}
+
+.navbar-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar {
+  background-color: #002e5b;
+  margin-bottom: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #011d3a;
+}
+
+.welcome-section {
+  background: #fdfdfd;
+  padding: 50px 0;
+}
+
+.welcome-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.welcome-text {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.welcome-btn {
+  display: inline-block;
+  background-color: #3e6eb0;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 999px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  cursor: default;
+}
+
+.welcome-btn:hover {
+  background-color: #3e6eb0;
+}
+
+.welcome-text h2 {
+  color: #1a3c6e;
+  font-size: 28px;
+  margin: 0;
+}
+
+.welcome-text h3 {
+  font-weight: normal;
+  color: #555;
+  margin-top: 5px;
+}
+
+.welcome-line {
+  width: 50px;
+  height: 3px;
+  background: orange;
+  margin: 15px auto;
+}
+
+.welcome-text p {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.welcome-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.welcome-image img {
+  max-width: 380px;
+  width: 100%;
+  height: auto;
+}
+
+#chatbot-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  z-index: 1000;
+  pointer-events: auto;
+}
+
+.chat-wrapper {
+  width: 320px;
+  height: 400px;
+  position: fixed;
+  bottom: 115px;
+  right: 90px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  z-index: 1001;
+  overflow: hidden;
+}
+
+.chat-wrapper.hidden {
+  display: none;
+}
+
+.chat-wrapper h2 {
+  background-color: #3e4095;
+  color: white;
+  font-size: 16px;
+  margin: 0;
+  padding: 12px;
+  text-align: center;
+}
+
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bubble {
+  padding: 8px 12px;
+  border-radius: 14px;
+  max-width: 80%;
+  font-size: 13px;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.user {
+  background-color: #3e4095;
+  color: white;
+  align-self: flex-end;
+}
+
+.bot {
+  background-color: #e0e0e0;
+  color: black;
+  align-self: flex-start;
+}
+
+.input-area {
+  display: flex;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.9);
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px 10px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+button {
+  margin-left: 8px;
+  padding: 8px 16px;
+  font-size: 13px;
+  background-color: #3e4095;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2e3075;
+}
+
+.bot a {
+  color: #1a0dab;
+  text-decoration: underline;
+}
+
+.bot a:hover {
+  color: #0d0080;
+}

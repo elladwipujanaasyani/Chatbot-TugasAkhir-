@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UPT. Perpustakaan UNP</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!--  Header
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <img src="images/logo-unp.png" alt="Logo UNP">
+        <img src="images/logo-perpus-unp.png" alt="Logo Perpustakaan" class="logo-img">
+        <div class="title">
+          <h1>UPT. Perpustakaan dan Penerbitan</h1>
+          <p>Universitas Negeri Padang</p>
+        </div>
+      </div>
+
+      <div class="top-right">
+        <div class="lang">
+          <img src="https://flagcdn.com/id.svg" alt="ID" width="24">
+          <img src="https://flagcdn.com/gb.svg" alt="EN" width="24">
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Kata Kunci...">
+          <button>🔍</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-  Navbar 
+  <nav class="navbar">
+    <ul>
+      <li><a href="dashboard.html">Home</a></li>
+      <li><a href="sejarah.html">Sejarah</a></li>
+      <li><a href="#">Manajemen</a></li>
+      <li><a href="#">Layanan Digital</a></li>
+      <li><a href="#">Panduan</a></li>
+      <li><a href="#">Berita</a></li>
+      <li><a href="#">Agenda</a></li>
+    </ul>
+  </nav>
+-->
+
+  <!-- Gambar di bawah navbar 
+   <div class="navbar-image">
+    <img src="images/perpustakaan.png" alt="Gambar Perpustakaan" />
+  </div>
+-->
+
+  <!-- Section Sambutan 
+   <section class="welcome-section">
+    <div class="container welcome-container">
+      <div class="welcome-text">
+        <div class="welcome-btn">Selamat Datang di</div>
+        <h2>UPT. PERPUSTAKAAN DAN PENERBITAN</h2>
+        <h3>Universitas Negeri Padang</h3>
+        <div class="welcome-line"></div>
+        <p>
+          UPT. Perpustakaan dan Penerbitan Universitas Negeri Padang (UNP) merupakan unit
+          layanan yang bertanggung jawab untuk menyediakan fasilitas perbukuan, penerbitan,
+          serta percetakan yang mendukung kegiatan akademik dan non-akademik di lingkungan universitas.
+          UPT ini memiliki peran penting dalam mendukung proses belajar mengajar melalui penyediaan
+          berbagai koleksi buku, jurnal, dan referensi yang dapat diakses oleh mahasiswa, dosen,
+          dan tenaga kependidikan.
+        </p>
+        <p> 
+          Selain itu, UPT. Perpustakaan dan Penerbitan UNP juga memiliki layanan percetakan yang mendukung
+          publikasi hasil-hasil penelitian, tugas akhir, jurnal ilmiah, serta kegiatan penerbitan lainnya
+          yang terkait dengan dunia akademik. Dengan fasilitas yang lengkap dan modern, UPT ini berkomitmen
+          untuk terus mendukung pengembangan ilmu pengetahuan dan kualitas pendidikan di Universitas Negeri Padang.
+        </p>
+      </div>
+    <div class="welcome-image">
+      <img src="images/kepala-perpustakaan.png" alt="Kepala UPT Perpustakaan UNP">
+    </div>
+  </div>
+</section>
+-->
+
+  <!-- Tombol Chatbot -->
+  <img id="chatbot-toggle" src="images/Gambar CS Fix.png" alt="Chatbot" onclick="toggleChatbot()" />
+
+  <!-- Kotak Chatbot -->
+  <div id="chat-container" class="chat-wrapper hidden">
+    <h2>Chatbot Perpustakaan UNP</h2>
+    <div id="chat-box" class="chat-box"></div>
+
+    <!-- Gunakan form agar Enter bisa digunakan -->
+    <form id="chat-form" class="input-area">
+      <input type="text" id="user-input" placeholder="Ketik pertanyaan di sini..." autocomplete="off" required />
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+
+  <script src="./chatbot.js"></script>
+</body>
+</html>
