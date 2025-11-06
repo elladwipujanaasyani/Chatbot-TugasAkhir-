@@ -1,0 +1,112 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.4;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #aaa;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  padding-right: 40px;
+  height: 44px;
+  line-height: 44px;
+}
+
+.toggle-password {
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 10px;
+  top: 0;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
+
+button {
+  background-color: #3e4095;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2d2e7a;
+}
+
+.faq-item {
+  background: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}

@@ -1,0 +1,101 @@
+id;test_question;expected_faq_id;expected_faq_question;paraphrase_type;notes
+1;Saya mau jadi anggota perpustakaan, prosedurnya gimana?;FAQ_01;Bagaimana cara mendaftar sebagai anggota perpustakaan?;parafrase (informal);variasi tutur kata
+2;Apa syarat pendaftaran anggota perpustakaan UNP?;FAQ_01;Bagaimana cara mendaftar sebagai anggota perpustakaan?;formal / syarat;menanyakan syarat khusus
+3;Jam buka perpustakaan hari kerja?;FAQ_02;Jam operasional / jam buka perpustakaan;singkat;missing kata 'apa'
+4;Perpustakaannya buka sampai jam berapa?;FAQ_02;Jam operasional / jam buka perpustakaan;parafrase;variasi bahasa
+5;Berapa lama masa pinjam buku?;FAQ_03;Lama peminjaman buku / periode peminjaman;parafrase;
+6;Batas waktu peminjaman buku itu berapa hari?;FAQ_03;Lama peminjaman buku / periode peminjaman;parafrase (detail);
+7;Berapa maksimal buku yang boleh dipinjam?;FAQ_04;Batas jumlah buku yang dapat dipinjam;parafrase;
+8;Kalau telat balikin buku kenapa ya? Ada denda?;FAQ_05;Ketentuan denda keterlambatan pengembalian buku;multi-intent;mengandung dua sub-pertanyaan
+9;Berapa denda kalau terlambat 1 minggu?;FAQ_05;Ketentuan denda keterlambatan pengembalian buku;spesifik kuantitas;butuh angka
+10;Gimana cara perpanjang peminjaman online?;FAQ_06;Cara perpanjangan peminjaman (online / offline);parafrase (digital);terkait layanan online
+11;Saya mau perpanjang pinjaman, bagaimana?;FAQ_06;Cara perpanjangan peminjaman (online / offline);informal;
+12;Buku hilang, apa prosedurnya?;FAQ_07;Prosedur jika buku hilang atau rusak;parafrase;
+13;Kalau buku rusak siapa yang tanggung jawab?;FAQ_07;Prosedur jika buku hilang atau rusak;parafrase;variant
+14;Gimana cara akses jurnal elektronik dari rumah?;FAQ_08;Akses e-resources / jurnal elektronik (remote);parafrase (remote);mencakup VPN/remote access
+15;Bagaimana cara pakai OPAC untuk cari buku?;FAQ_09;Cara menggunakan OPAC (pencarian katalog);parafrase (tool);mencantumkan istilah OPAC
+16;Di mana letak gedung perpustakaan kampus pusat?;FAQ_10;Lokasi / alamat perpustakaan;formal;
+17;Kontak perpustakaan, nomor telepon atau email?;FAQ_11;Informasi kontak perpustakaan (telepon, email);direct request;
+18;Ada layanan ruang diskusi yang bisa dipesan gak?;FAQ_12;Pemesanan ruang baca / ruang diskusi;parafrase (availability);
+19;Cara booking ruang rapat perpustakaan?;FAQ_12;Pemesanan ruang baca / ruang diskusi;formal;
+20;Bisa minta fotokopi atau print di perpustakaan?;FAQ_13;Layanan printing / fotokopi di perpustakaan;parafrase;
+21;Layanan cetak ada berapa hari buka?;FAQ_13;Layanan printing / fotokopi di perpustakaan;follow-up specific;
+22;Apa itu interlibrary loan dan gimana caranya?;FAQ_14;Layanan peminjaman antarperpustakaan (interlibrary loan);istilah teknis;
+23;Saya mahasiswa baru, bagaimana orientasi perpustakaan?;FAQ_15;Program orientasi & pelatihan perpustakaan untuk mahasiswa baru;parafrase;
+24;Ada layanan konsultasi sitasi / referensi gak?;FAQ_16;Layanan bantuan penulisan sitasi / referensi;parafrase;
+25;Bagaimana cara mengembalikan buku di luar jam operasional?;FAQ_17;Drop-box / prosedur pengembalian di luar jam kerja;scenario-based;
+26;Aku lupa password akun perpustakaan, gimana reset?;FAQ_18;Reset akun anggota / lupa password;informal;typo/colloquial 'gimana'
+27;Apa persyaratan pinjam untuk dosen tamu?;FAQ_19;Ketentuan peminjaman untuk dosen / tamu / eksternal;specific user-type;
+28;Ada batas waktu perpanjangan berapa kali?;FAQ_06;Cara perpanjangan peminjaman (online / offline);follow-up policy;
+29;Bagaimana cara daftar?;FAQ_01;Bagaimana cara mendaftar sebagai anggota perpustakaan?;typo / ambiguous;menguji toleransi typo
+30;Saya cari e-book tentang 'metode penelitian', ada link?;FAQ_08;Akses e-resources / jurnal elektronik (remote);query with topic;menuntut mapping topik ke koleksi digital
+31;Bagaimana prosedur jadi anggota baru di perpustakaan?;FAQ_01;FAQ question placeholder;generated paraphrase;
+32;Mau daftar membership perpustakaan, apa syaratnya?;FAQ_01;FAQ question placeholder;generated paraphrase;
+33;Kalau mahasiswa luar UNP bisa daftar anggota gak?;FAQ_01;FAQ question placeholder;generated paraphrase;
+34;Cara registrasi akun perpustakaan gimana ya?;FAQ_01;FAQ question placeholder;generated paraphrase;
+35;Apakah bisa daftar anggota lewat online?;FAQ_01;FAQ question placeholder;generated paraphrase;
+36;Jam operasional perpustakaan UNP kapan aja?;FAQ_02;FAQ question placeholder;generated paraphrase;
+37;Hari Sabtu perpustakaan buka gak?;FAQ_02;FAQ question placeholder;generated paraphrase;
+38;Kalau hari libur nasional, perpustakaan tetap buka?;FAQ_02;FAQ question placeholder;generated paraphrase;
+39;Sampai jam berapa layanan perpustakaan tersedia?;FAQ_02;FAQ question placeholder;generated paraphrase;
+40;Jam layanan sore tutup jam berapa?;FAQ_02;FAQ question placeholder;generated paraphrase;
+41;Buku bisa dipinjam berapa lama ya?;FAQ_03;FAQ question placeholder;generated paraphrase;
+42;Lama peminjaman maksimal itu berapa hari?;FAQ_03;FAQ question placeholder;generated paraphrase;
+43;Masa peminjaman standar untuk mahasiswa berapa hari?;FAQ_03;FAQ question placeholder;generated paraphrase;
+44;Apakah dosen punya masa pinjam lebih lama?;FAQ_03;FAQ question placeholder;generated paraphrase;
+45;Berapa lama batas pinjam skripsi?;FAQ_03;FAQ question placeholder;generated paraphrase;
+46;Boleh pinjam maksimal berapa buku sekaligus?;FAQ_04;FAQ question placeholder;generated paraphrase;
+47;Ada batas jumlah koleksi yang bisa dipinjam gak?;FAQ_04;FAQ question placeholder;generated paraphrase;
+48;Mahasiswa bisa pinjam lebih dari 5 buku kah?;FAQ_04;FAQ question placeholder;generated paraphrase;
+49;Maksimal jumlah buku dipinjam oleh dosen berapa?;FAQ_04;FAQ question placeholder;generated paraphrase;
+50;Berapa buku sekaligus bisa dipinjam untuk umum?;FAQ_04;FAQ question placeholder;generated paraphrase;
+51;Kalau terlambat balikin buku, denda per hari berapa?;FAQ_05;FAQ question placeholder;generated paraphrase;
+52;Apakah ada sanksi kalau telat kembalikan buku?;FAQ_05;FAQ question placeholder;generated paraphrase;
+53;Denda telat pengembalian dihitung per hari atau per minggu?;FAQ_05;FAQ question placeholder;generated paraphrase;
+54;Keterlambatan balikin buku kena penalti apa aja?;FAQ_05;FAQ question placeholder;generated paraphrase;
+55;Apa ada blacklist kalau sering telat balikin?;FAQ_05;FAQ question placeholder;generated paraphrase;
+56;Cara memperpanjang peminjaman lewat website gimana?;FAQ_06;FAQ question placeholder;generated paraphrase;
+57;Bisakah pinjaman diperpanjang via aplikasi mobile?;FAQ_06;FAQ question placeholder;generated paraphrase;
+58;Kalau mau perpanjang pinjam, apa harus datang langsung?;FAQ_06;FAQ question placeholder;generated paraphrase;
+59;Apakah semua buku bisa diperpanjang peminjamannya?;FAQ_06;FAQ question placeholder;generated paraphrase;
+60;Ada batasan jumlah perpanjangan peminjaman gak?;FAQ_06;FAQ question placeholder;generated paraphrase;
+61;Kalau buku pinjaman rusak, apa yang harus dilakukan?;FAQ_07;FAQ question placeholder;generated paraphrase;
+62;Apakah ganti rugi berlaku juga untuk buku rusak ringan?;FAQ_07;FAQ question placeholder;generated paraphrase;
+63;Kalau buku hilang, apakah harus beli pengganti?;FAQ_07;FAQ question placeholder;generated paraphrase;
+64;Apa prosedur ganti rugi untuk buku hilang?;FAQ_07;FAQ question placeholder;generated paraphrase;
+65;Kalau buku basah apakah dihitung rusak?;FAQ_07;FAQ question placeholder;generated paraphrase;
+66;Bagaimana akses jurnal online dari rumah?;FAQ_08;FAQ question placeholder;generated paraphrase;
+67;Apakah bisa buka e-resources tanpa jaringan kampus?;FAQ_08;FAQ question placeholder;generated paraphrase;
+68;Login ke portal jurnal dari luar kampus gimana?;FAQ_08;FAQ question placeholder;generated paraphrase;
+69;Cara akses database e-journal menggunakan akun mahasiswa?;FAQ_08;FAQ question placeholder;generated paraphrase;
+70;Apakah tersedia akses ke e-book internasional?;FAQ_08;FAQ question placeholder;generated paraphrase;
+71;Langkah-langkah menggunakan OPAC apa saja?;FAQ_09;FAQ question placeholder;generated paraphrase;
+72;Cara mencari buku lewat katalog online gimana?;FAQ_09;FAQ question placeholder;generated paraphrase;
+73;Tutorial penggunaan OPAC ada?;FAQ_09;FAQ question placeholder;generated paraphrase;
+74;Bagaimana filter hasil pencarian di OPAC?;FAQ_09;FAQ question placeholder;generated paraphrase;
+75;Apakah OPAC bisa diakses lewat HP?;FAQ_09;FAQ question placeholder;generated paraphrase;
+76;Alamat lengkap perpustakaan pusat ada di mana?;FAQ_10;FAQ question placeholder;generated paraphrase;
+77;Gedung perpustakaan letaknya dekat fakultas apa?;FAQ_10;FAQ question placeholder;generated paraphrase;
+78;Perpustakaan pusat ada di lantai berapa?;FAQ_10;FAQ question placeholder;generated paraphrase;
+79;Apakah ada cabang perpustakaan di luar kampus utama?;FAQ_10;FAQ question placeholder;generated paraphrase;
+80;Bagaimana menuju perpustakaan dengan transportasi umum?;FAQ_10;FAQ question placeholder;generated paraphrase;
+81;Nomor telepon bagian layanan perpustakaan berapa?;FAQ_11;FAQ question placeholder;generated paraphrase;
+82;Alamat email resmi perpustakaan apa?;FAQ_11;FAQ question placeholder;generated paraphrase;
+83;Ada kontak WhatsApp perpustakaan?;FAQ_11;FAQ question placeholder;generated paraphrase;
+84;Siapa yang bisa dihubungi untuk informasi perpustakaan?;FAQ_11;FAQ question placeholder;generated paraphrase;
+85;Bagaimana cara menghubungi helpdesk perpustakaan?;FAQ_11;FAQ question placeholder;generated paraphrase;
+86;Bisakah memesan ruang diskusi online?;FAQ_12;FAQ question placeholder;generated paraphrase;
+87;Cara booking ruang belajar kelompok?;FAQ_12;FAQ question placeholder;generated paraphrase;
+88;Apakah tersedia ruang seminar kecil di perpustakaan?;FAQ_12;FAQ question placeholder;generated paraphrase;
+89;Syarat menggunakan ruang diskusi apa saja?;FAQ_12;FAQ question placeholder;generated paraphrase;
+90;Apakah ada biaya sewa ruang diskusi?;FAQ_12;FAQ question placeholder;generated paraphrase;
+91;Apakah di perpustakaan ada layanan fotokopi?;FAQ_13;FAQ question placeholder;generated paraphrase;
+92;Bisa cetak tugas di perpustakaan gak?;FAQ_13;FAQ question placeholder;generated paraphrase;
+93;Apakah tersedia layanan scan dokumen di perpustakaan?;FAQ_13;FAQ question placeholder;generated paraphrase;
+94;Harga fotokopi di perpustakaan berapa per lembar?;FAQ_13;FAQ question placeholder;generated paraphrase;
+95;Layanan cetak warna tersedia gak?;FAQ_13;FAQ question placeholder;generated paraphrase;
+96;Bagaimana prosedur pinjam antar perpustakaan?;FAQ_14;FAQ question placeholder;generated paraphrase;
+97;Apakah bisa pinjam buku dari universitas lain?;FAQ_14;FAQ question placeholder;generated paraphrase;
+98;Syarat interlibrary loan apa saja?;FAQ_14;FAQ question placeholder;generated paraphrase;
+99;Apakah interlibrary loan ada biayanya?;FAQ_14;FAQ question placeholder;generated paraphrase;
+100;Berapa lama proses peminjaman antarperpustakaan?;FAQ_14;FAQ question placeholder;generated paraphrase;
